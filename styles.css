@@ -1,0 +1,156 @@
+@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+.herepromotion{
+    cursor: pointer;
+    width: 205px;
+    height: 33px;
+    border-radius: 16px;
+    background: #E89437;
+    display: inline-flex;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    position: relative;
+}
+img{
+    width: 23.111px;
+    height: 16px;
+}
+
+p{
+    margin: 0;
+}
+
+.overlay-text{
+    color: #121212;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; 
+}
+
+.popup {
+    z-index: 2000;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    border-radius: 16px;
+    background: #2E2D2D;
+    transition: all 0.3s ease-in-out;
+    width: 247px;
+    padding: 20px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    color: #FFFFFF;
+}
+
+.popup::before{
+    content: url('https://storage.herewallet.app/banners/promotionstar.svg');
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+.popup::after{
+    content: "50XP";
+    position: absolute;
+    top: -5px;
+    left: -9px;
+    color: #0A0848;
+    text-align: center;
+    font-family: Inter;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 177.778% */
+    letter-spacing: 0.09px;
+    text-transform: uppercase;
+}
+
+
+.popup.active{
+    display: block;
+    top: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup__items{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_noimage{
+    justify-content: start;
+    gap: 10px;
+}
+
+.item__number{
+    font-family: 'Cabinet Grotesk', sans-serif;
+    border: 2px solid #FFFFFF;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-family: Cabinet Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+}
+.item__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item__image img{
+    width: 96px;
+    height: 104px;
+}
+.quarcode{
+    width: 80px !important;
+    height: 80px !important;
+}
+.item__text{
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 100px;
+    letter-spacing: 0.14px;
+}
+
+.item__qrtext{
+    padding-top: 8px;
+    opacity: 0.7;
+}
+
+.popup__footer{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+}
+
+.popup__text_s{
+    padding: 0 10px;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "herepromotion",
+  "version": "1.3.0",
+  "description": "promotion banner for parthners of HERE wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaShevchik/herepromotion.git"
+  },
+  "keywords": [
+    "here",
+    "promotion",
+    "herewallet",
+    "wallet"
+  ],
+  "author": "here",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaShevchik/herepromotion/issues"
+  },
+  "homepage": "https://github.com/NikitaShevchik/herepromotion#readme"
+}
