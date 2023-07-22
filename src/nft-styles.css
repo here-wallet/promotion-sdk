@@ -1,11 +1,12 @@
-@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-.herepromotion{
+@import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+.herepromotion {
     cursor: pointer;
     width: 205px;
     height: 33px;
     border-radius: 16px;
-    background: #E89437;
+    background: #e89437;
     display: inline-flex;
     height: 33px;
     justify-content: center;
@@ -14,33 +15,57 @@
     flex-shrink: 0;
     position: relative;
 }
-img{
+img {
     width: 23.111px;
     height: 16px;
 }
 
-p{
+p {
     margin: 0;
 }
 
-.overlay-text{
+.overlay-text {
     color: #121212;
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family:
+        "Inter",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 16px; 
+    line-height: 16px;
 }
 
 .popup {
     z-index: 2000;
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family:
+        "Inter",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
     display: none;
     position: absolute;
     top: 35px;
     right: 0;
     border-radius: 16px;
-    background: #2E2D2D;
+    background: #2e2d2d;
     transition: all 0.3s ease-in-out;
     width: 247px;
     padding: 20px 24px;
@@ -48,21 +73,21 @@ p{
     justify-content: center;
     align-items: flex-start;
     gap: 12px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.popup::before{
-    content: url('https://storage.herewallet.app/banners/promotionstar.svg');
+.popup::before {
+    content: url("https://storage.herewallet.app/nft-promo/promotionstar.svg");
     position: absolute;
     top: -15px;
     left: -15px;
 }
-.popup::after{
+.popup::after {
     content: "50XP";
     position: absolute;
     top: -5px;
     left: -9px;
-    color: #0A0848;
+    color: #0a0848;
     text-align: center;
     font-family: Inter;
     font-size: 9px;
@@ -73,34 +98,33 @@ p{
     text-transform: uppercase;
 }
 
-
-.popup.active{
+.popup.active {
     display: block;
     top: 35px;
     transition: all 0.3s ease-in-out;
 }
 
-.popup__items{
+.popup__items {
     display: flex;
     gap: 25px;
     flex-direction: column;
 }
 
-.item{
+.item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.item_noimage{
+.item_noimage {
     justify-content: start;
     gap: 10px;
 }
 
-.item__number{
-    font-family: 'Cabinet Grotesk', sans-serif;
-    border: 2px solid #FFFFFF;
+.item__number {
+    font-family: "Cabinet Grotesk", sans-serif;
+    border: 2px solid #ffffff;
     width: 22px;
     height: 22px;
     border-radius: 50%;
@@ -115,33 +139,49 @@ p{
     line-height: 24px;
     letter-spacing: 0.14px;
 }
-.item__image{
+
+.item__image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.item__image img{
+
+.item__image img {
     width: 96px;
     height: 104px;
 }
-.quarcode{
+
+.quarcode {
     width: 80px !important;
     height: 80px !important;
 }
-.item__text{
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+.item__text {
+    font-family:
+        "Inter",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
     font-size: 14px;
     font-weight: 600;
     max-width: 100px;
     letter-spacing: 0.14px;
 }
 
-.item__qrtext{
+.item__qrtext {
     padding-top: 8px;
     opacity: 0.7;
 }
 
-.popup__footer{
+.popup__footer {
     padding-top: 20px;
     text-align: center;
     font-size: 14px;
@@ -151,6 +191,6 @@ p{
     margin: 0;
 }
 
-.popup__text_s{
+.popup__text_s {
     padding: 0 10px;
 }

@@ -1,14 +1,24 @@
 {
-  "name": "herepromotion",
-  "version": "1.3.0",
-  "description": "promotion banner for parthners of HERE wallet",
-  "main": "index.js",
+  "name": "@here-wallet/promotion",
+  "version": "0.1.0",
+  "description": "Promotion toolkit for parthners of HERE wallet",
+  "source": "src/index.js",
+  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs.js",
+  "global": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build "
   },
+  "targets": {
+    "global": {
+      "isLibrary": false,
+      "outputFormat": "global"
+    }
+  },
+  "browserslist": "> 5%",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NikitaShevchik/herepromotion.git"
+    "url": "git+https://github.com/here-wallet/herepromotion.git"
   },
   "keywords": [
     "here",
@@ -19,7 +29,12 @@
   "author": "here",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NikitaShevchik/herepromotion/issues"
+    "url": "https://github.com/here-wallet/herepromotion/issues"
   },
-  "homepage": "https://github.com/NikitaShevchik/herepromotion#readme"
+  "homepage": "https://github.com/here-wallet/herepromotion#readme",
+  "devDependencies": {
+    "@parcel/optimizer-data-url": "^2.9.3",
+    "@parcel/transformer-inline-string": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
 }

@@ -1,3 +1,3 @@
-Example: https://promohere6.surge.sh/
+# @here-wallet/promotion
 
-Promotion banner for HERE wallet parthners
+Promotion toolkit for HERE wallet parthners
