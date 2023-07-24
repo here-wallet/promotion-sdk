@@ -6,14 +6,12 @@ Promotion toolkit for HERE wallet parthners
 
 ```ts
 import HerePromo from '@here-wallet/promotion';
-HerePromo.init({ selector: '.my-button' })
+HerePromotion.init({ appendTo: '.header' })
 ```
 
 ### Or just as script!
 
 ```html
-<script src="https://raw.githubusercontent.com/here-wallet/promotion-sdk/master/dist/index.js"></script>
-<script>
-    HerePromotion.init({ selector: 'body' })
-</script>
+<script src="https://www.unpkg.com/@here-wallet/promotion@0.2.0/dist/index.js"></script>
+<script>HerePromotion.init({ appendTo: '.header' })</script>
 ```

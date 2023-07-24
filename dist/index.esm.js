@@ -9,15 +9,22 @@ var $149fec6b5fbaeb79$exports = {};
 $149fec6b5fbaeb79$exports = "<div class=\"herepromotion\">\n    <img src=\"https://storage.herewallet.app/nft-promo/here-logo.svg\" alt=\"Here Logo\">\n    <p class=\"overlay-text\">Get 50xp at HERE Wallet</p>\n    <div class=\"popup\">\n        <div class=\"popup__items\">\n            <div class=\"popup__item item\">\n                <p class=\"item__number\">1</p>\n                <div class=\"item__text\">Create wallet</div>\n                <div class=\"item__qr\">\n                    <div class=\"item__image\">\n                        <img src=\"https://storage.herewallet.app/nft-promo/download.herewallet.png\" alt=\"Here Logo\" class=\"quarcode\">\n                    </div>\n                    <p class=\"item__qrtext\">Scan to create</p>\n                </div>\n            </div>\n            <div class=\"popup__item item item_noimage\">\n                <p class=\"item__number\">2</p>\n                <div class=\"item__text\">Login</div>\n            </div>\n            <div class=\"popup__item item\">\n                <p class=\"item__number\">3</p>\n                <div class=\"item__text\">Get 50 score for NFT Purchase</div>\n                <div class=\"item__image\">\n                    <img src=\"https://storage.herewallet.app/nft-promo/promotion-nft.png\" alt=\"Here NFTs\">\n                </div>\n            </div>\n        </div>\n        <div class=\"popup__footer\">\n            <p class=\"popup__text_s\">Top-10 people by score every week get USDT and other prizes</p>\n        </div>\n    </div>\n</div>";
 
 
-function $e0b861a0e01ff8f5$var$init(options) {
-    const { selector: selector } = options;
-    const container = document.querySelector(selector);
-    container.innerHTML = (0, (/*@__PURE__*/$parcel$interopDefault($149fec6b5fbaeb79$exports)));
+function $e0b861a0e01ff8f5$var$init({ appendTo: appendTo, prependTo: prependTo }) {
+    const container = document.createElement("div");
     const style = document.createElement("style");
+    container.innerHTML = (0, (/*@__PURE__*/$parcel$interopDefault($149fec6b5fbaeb79$exports)));
     style.textContent = (0, (/*@__PURE__*/$parcel$interopDefault($94e897f9b8e1a35e$exports)));
     container.appendChild(style);
     const herePromotion = container.querySelector(".herepromotion");
     const popup = container.querySelector(".popup");
+    if (appendTo) {
+        const el = document.querySelector(appendTo);
+        el.appendChild(container);
+    }
+    if (prependTo) {
+        const el = document.querySelector(appendTo);
+        el.prepend(container);
+    }
     let isTouchDevice = false;
     if ("ontouchstart" in window || window.DocumentTouch && document instanceof window.DocumentTouch) isTouchDevice = true;
     if (isTouchDevice) {
@@ -36,6 +43,7 @@ function $e0b861a0e01ff8f5$var$init(options) {
             popup.classList.remove("active");
         });
     }
+    return container;
 }
 const $e0b861a0e01ff8f5$var$HerePromotion = {
     init: $e0b861a0e01ff8f5$var$init
