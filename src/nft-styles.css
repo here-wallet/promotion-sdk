@@ -14,13 +14,19 @@
     gap: 8px;
     flex-shrink: 0;
     position: relative;
+    box-sizing: content-box;
 }
-img {
+
+.herepromotion * {
+    box-sizing: content-box;
+}
+
+.herepromotion img {
     width: 23.111px;
     height: 16px;
 }
 
-p {
+.herepromotion p {
     margin: 0;
 }
 
@@ -74,6 +80,7 @@ p {
     align-items: flex-start;
     gap: 12px;
     color: #ffffff;
+    box-sizing: content-box;
 }
 
 .popup::before {

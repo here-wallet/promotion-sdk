@@ -1,6 +1,6 @@
 {
   "name": "@here-wallet/promotion",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Promotion toolkit for parthners of HERE wallet",
   "source": "src/index.js",
   "module": "dist/index.esm.js",
